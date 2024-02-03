@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup page</title>
 </head>
+
 <body>
     <header>
         <table align="right">
@@ -27,9 +29,49 @@
         </table>
     </header>
     <hr>
+    <fieldset>
+        <legend>Signup</legend>
+        <form action="" method="get"> <!--You van use either get-insecure or post-secure-->
+            <label for="usr">UserName</label><br>
+            <input type="text" id="usr" name="usrname" placeholder="Enter UserName"><br>
 
-    <form action=""></form>
+            <label for="eml">Email</label><br>
+            <input type="email" id="eml" name="email" placeholder="Enter Email"><br>
 
+            <label for="paw">Password</label><br>
+            <input type="password" id="pwd" name="password" placeholder="Enter Password"><br>
+
+            <label for="dob">DOB</label><br>
+            <input type="date" name="dob" id="dob"><br>
+
+            <label for="gen">Gender</label>
+            <input type="radio" id="gen" name="gen" value="m">:Male
+            <input type="radio" id="gen" name="gen" value="f">:Female<br>
+
+            <label for="ph">Phone</label>
+            <input type="tel" name="tel" id="tel" placeholder="eg:123456789" pattern="[5-9]{1}-[0-9]{9}"><br>
+
+            <label for="sub">Course</label> <br>
+            <select name="subject" id="sub">
+                <optgroup label="Engineering">
+                    <option value="">CSE</option>
+                    <option value="">Civil</option>
+                    <option value="">Mechanical</option>
+                    <option value="">Electronics</option>
+                </optgroup>
+
+                <optgroup label="Others">
+                    <option value="">ARTS</option>
+                    <option value="">Music</option>
+                    <option value="">Paint</option>
+                    <option value="">SST</option>
+                </optgroup>
+            </select>
+            <br>
+            <input type="submit" value="send data"><br>
+
+        </form>
+    </fieldset>
 
 
 
@@ -94,6 +136,7 @@
                     alt="double-up" /></a>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
