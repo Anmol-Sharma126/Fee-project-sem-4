@@ -31,9 +31,9 @@
     <hr>
     <fieldset>
         <legend>Signup</legend>
-        <form action="" method="get"> <!--You van use either get-insecure or post-secure-->
+        <form action="" method="get" autocomplete="on"> <!--You van use either get-insecure or post-secure-->
             <label for="usr">UserName</label><br>
-            <input type="text" id="usr" name="usrname" placeholder="Enter UserName"><br>
+            <input type="text" id="usr" name="usrname" placeholder="Enter UserName" size="30" maxlength="20" autofocus><br>
 
             <label for="eml">Email</label><br>
             <input type="email" id="eml" name="email" placeholder="Enter Email"><br>
@@ -67,8 +67,29 @@
                     <option value="">SST</option>
                 </optgroup>
             </select>
-            <br>
+            <br><br>
+
+            <label for="fee">Fee</label>
+            <input list="fees">
+
+            <datalist id="fees">
+                <option value="2500"></option>
+                <option value="3000"></option>
+                <option value="3500"></option>
+            </datalist>
+            <input type="number" min="1" max="10"><br>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
             <input type="submit" value="send data"><br>
+            <input type="reset" value="Reset">
+
+            <!-- ->size
+            ->maxlength
+            ->min and max
+            ->autofocus
+            ->required
+            ->autocomplete -->
 
         </form>
     </fieldset>
